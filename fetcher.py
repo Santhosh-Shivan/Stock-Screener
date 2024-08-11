@@ -15,7 +15,7 @@ def __download_data(ticker, start, end, xchange, write_to_file=True):
 
     allow_reading_file = True
     if os.path.isfile(fileName) and allow_reading_file:
-        print("reading from file:  " + fileName)
+        # print("reading from file:  " + fileName)
         df = pd.read_csv(
             fileName, index_col="Date", parse_dates=True, na_values=["nan"]
         )
